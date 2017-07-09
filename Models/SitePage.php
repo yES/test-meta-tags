@@ -33,7 +33,7 @@ class SitePage
         $client = new GuzzleHttp\Client();
 
         $cookieJar = CookieJar::fromArray([
-            'Tests' => 'seo'
+            'test' => 'seo'
         ], parse_url($url, PHP_URL_HOST));
 
         return $client->request('GET', $url, ['cookies' => $cookieJar]);
