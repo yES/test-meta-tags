@@ -1,6 +1,6 @@
 <?php
 
-include 'models/SitePage.php';
+include_once('Models/SitePage.php');
 
 class MetaTagTest extends \PHPUnit\Framework\TestCase
 {
