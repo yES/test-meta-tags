@@ -8,9 +8,9 @@ class SitePage
     public static function createFromCsvLine($csvLine)
     {
         $sitePage = new static();
-        $sitePage->url = isset($csvLine[0]) ? $csvLine[0] : null;
-        $sitePage->metaTitle = isset($csvLine[1]) ? $csvLine[1] : null;
-        $sitePage->metaDescription = isset($csvLine[2]) ? $csvLine[2] : null;
+        $sitePage->url = $csvLine[0] ?? null;
+        $sitePage->metaTitle = $csvLine[1] ?? null;
+        $sitePage->metaDescription = $csvLine[2] ?? null;
 
         return $sitePage;
     }
